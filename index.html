@@ -3,57 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My DevOps Portfolio</title>
+
+    <meta name="authos" content="ShivaRaj - Aspiring DevOps and Cloud Engineer. Explore my skills, projects and hands-on experience.">
+
+    <title>Shiva Raj | DevOps Engineer Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Shiva<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Hello, I'm a DevOps Engineer</h2>
-        <p>BCA Graduate | Aspiring Cloud & DevOps Engineer</p>
-        <a class="btn" href="#about">Explore My Portfolio</a>
-    </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a BCA graduate interested in Cloud Computing
-            and DevOps. I am learning Linux, Git, GitHub,
-            AWS, Docker and Kubernetes.
-        </p>
-    </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
 
-    <section id="skills">
-        <h2>My Technical Skills</h2>
-        <div class="skills">
-            <span>Linux</span>
-            <span>Shell Scripting</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>AWS</span>
-            <span>Docker</span>
+        <div class="hero-content">
+            <p class="intro">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Shiva Raj</span></h1>
+
+            <h2>Aspiring DevOps & Cloud Engineer</h2>
+
+            <p class="hero-description">
+                BCA Graduate passionate about Linux, Cloud Computing,
+                Automation and DevOps technologies. I enjoy learning
+                new technologies and building practical projects.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">
+                    Explore My Projects
+                </a>
+
+                <a href="#contact class="btn secondary-btn">
+                    Contact Me
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/Shiva-raj01"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </div>
         </div>
+
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: shivuraj1902@gmail.com</p>
-        <p>GitHub: Shiva-raj01</p>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+
+        <div class="section-heading">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                I am a Bachelor of Computer Applications (BCA) graduate
+                with a strong interest in Cloud Computing and DevOps.
+                I am developing my technical skills through hands-on
+                practice and real-world projects.
+            </p>
+
+            <p>
+                I have been learning Linux, Shell Scripting, Git,
+                GitHub, AWS and Docker. I am also expanding my
+                knowledge of Kubernetes, CI/CD and Infrastructure
+                as Code.
+            </p>
+
+            <p>
+                My goal is to become a skilled DevOps Engineer and
+                contribute to building reliable, scalable and
+                automated applications.
+            </p>
+        </div>
+
     </section>
 
-    <footer>
-        <p>© 2026 My Portfolio. All rights reserved.</p>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+
+        <div class="section-heading">
+            <p>WHAT I WORK WITH</p>
+            <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Operating Systems</h3>
+                <p>Linux</p>
+                <p>Ubuntu</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Scripting</h3>
+                <p>Shell Scripting</p>
+                <p>Bash</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Version Control</h3>
+                <p>Git</p>
+                <p>GitHub</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Cloud Computing</h3>
+                <p>AWS EC2</p>
+                <p>AWS S3</p>
+                <p>IAM and VPC</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Containers</h3>
+                <p>Docker</p>
+                <p>Docker Networking</p>
+                <p>Docker Volumes</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Web Technologies</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Nginx</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Orchestration</h3>
+                <p>Kubernetes - Learning</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CI/CD and Automation</h3>
+                <p>Jenkins - Learning</p>
+                <p>Terraform - Learning</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+
+        <div class="section-heading">
+            <p>MY PRACTICAL WORK</p>
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-number">01</div>
+                <h3>Static Portfolio Website</h3>
+
+                <p>
+                    Designed and deployed a personal portfolio website
+                    on AWS EC2 using Ubuntu and Nginx.
+                </p>
+
+                <div class="project-tags">
+                    <span>AWS EC2</span>
+                    <span>Linux</span>
+                    <span>Nginx</span>
+                    <span>GitHub</span>
+                </div>
+
+                <a href="https://github.com/Shiva-raj01/static_protofolio"
+                   target="_blank" rel="noopener noreferrer">
+                    View Source Code →
+                </a>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-number">02</div>
+                <h3>Docker Networking</h3>
+
+                <p>
+                    Practised Docker network creation and container
+                    communication using isolated Docker networks.
+                </p>
+
+                <div class="project-tags">
+                    <span>Docker</span>
+                    <span>Networking</span>
+                    <span>Containers</span>
+                </div>
+
+                <a href="https://docs.docker.com/engine/network/"
+                   target="_blank" rel="noopener noreferrer">
+                    Docker Documentation →
+                </a>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-number">03</div>
+                <h3>Docker Volume Management</h3>
+
+                <p>
+                    Practised Docker volumes to understand persistent
+                    storage and sharing data between containers.
+                </p>
+
+                <div class="project-tags">
+                    <span>Docker</span>
+                    <span>Volumes</span>
+                    <span>Linux</span>
+                </div>
+
+                <a href="https://docs.docker.com/engine/storage/volumes/"
+                   target="_blank" rel="noopener noreferrer">
+                    Docker Documentation →
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+
+        <div class="section-heading">
+            <p>MY ACADEMIC BACKGROUND</p>
+            <h2>Education</h2>
+        </div>
+
+        <div class="education-card">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Undergraduate Degree</p>
+            <p>Completed</p>
+        </div>
+
+        <div class="education-card">
+            <h3>DevOps and Cloud Computing</h3>
+            <p>Technical Learning and Hands-on Practice</p>
+            <p>Currently Learning</p>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+
+        <div class="section-heading">
+            <p>LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+        </div>
+
+        <p>
+            I am interested in DevOps and Cloud opportunities.
+            Feel free to connect with me.
+        </p>
+
+        <div class="contact-details">
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:shivuraj1902@gmail.com">
+                    shivuraj1902@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Shiva-raj01"
+                   target="_blank" rel="noopener noreferrer">
+                    Shiva-raj01
+                </a>
+            </p>
+
+            <p>
+                <strong>Location:</strong> Bengaluru, India
+            </p>
+        </div>
+
+        <a href="mailto:shivuraj1902@gmail.com"
+           class="btn primary-btn">
+            Send Me an Email
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            © <span id="currentYear">2026</span> Shiva Raj.
+            Built with HTML, CSS and JavaScript.
+        </p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
