@@ -1,58 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* =====================================
+   1. GENERAL SETTINGS
+===================================== */
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #172554;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.hero {
-    background: #1e40af;
-    color: white;
-    text-align: center;
-    padding: 90px 20px;
-}
-
-.hero h2 {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: white;
-    color: #1e40af;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-section {
-    padding: 45px 20px;
-    text-align: center;
-}
-
-/* GENERAL SETTINGS */
 * {
     margin: 0;
     padding: 0;
@@ -92,7 +41,10 @@ section {
 }
 
 
-/* NAVIGATION */
+/* =====================================
+   2. NAVIGATION
+===================================== */
+
 .header {
     position: sticky;
     top: 0;
@@ -149,7 +101,10 @@ section {
 }
 
 
-/* HERO SECTION */
+/* =====================================
+   3. HERO SECTION
+===================================== */
+
 .hero {
     max-width: 1150px;
     min-height: 650px;
@@ -236,7 +191,10 @@ section {
 }
 
 
-/* TERMINAL DESIGN */
+/* =====================================
+   4. TERMINAL DESIGN
+===================================== */
+
 .hero-visual {
     width: 100%;
 }
@@ -302,11 +260,16 @@ section {
 }
 
 @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
 }
 
 
-/* COMMON SECTION */
+/* =====================================
+   5. COMMON SECTION
+===================================== */
+
 .section {
     max-width: 1150px;
     margin: auto;
@@ -323,7 +286,10 @@ section {
 }
 
 
-/* ABOUT */
+/* =====================================
+   6. ABOUT SECTION
+===================================== */
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -355,10 +321,7 @@ section {
     transition: 0.3s;
 }
 
-.info-card:hover,
-.skill-card:hover,
-.project-card:hover,
-.contact-card:hover {
+.info-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary);
 }
@@ -378,7 +341,10 @@ section {
 }
 
 
-/* SKILLS */
+/* =====================================
+   7. SKILLS SECTION
+===================================== */
+
 .skills-section {
     max-width: none;
     background: #0b1728;
@@ -405,6 +371,11 @@ section {
     transition: 0.3s;
 }
 
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
 .skill-icon {
     font-size: 29px;
     margin-bottom: 12px;
@@ -426,7 +397,10 @@ section {
 }
 
 
-/* PROJECTS */
+/* =====================================
+   8. PROJECTS SECTION
+===================================== */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -441,6 +415,11 @@ section {
     display: flex;
     flex-direction: column;
     transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
 }
 
 .project-top {
@@ -497,7 +476,10 @@ section {
 }
 
 
-/* EDUCATION */
+/* =====================================
+   9. EDUCATION SECTION
+===================================== */
+
 .education-section {
     background: #0b1728;
     max-width: none;
@@ -546,7 +528,10 @@ section {
 }
 
 
-/* CONTACT */
+/* =====================================
+   10. CONTACT SECTION
+===================================== */
+
 .contact-intro {
     text-align: center;
     color: var(--muted);
@@ -570,6 +555,11 @@ section {
     overflow-wrap: anywhere;
 }
 
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
 .contact-card > span {
     font-size: 30px;
 }
@@ -589,7 +579,10 @@ section {
 }
 
 
-/* FOOTER */
+/* =====================================
+   11. FOOTER
+===================================== */
+
 .footer {
     background: #050c17;
     border-top: 1px solid var(--border);
@@ -606,8 +599,12 @@ section {
 }
 
 
-/* RESPONSIVE DESIGN */
+/* =====================================
+   12. RESPONSIVE DESIGN
+===================================== */
+
 @media (max-width: 900px) {
+
     .hero {
         grid-template-columns: 1fr;
         padding-top: 70px;
@@ -631,7 +628,9 @@ section {
     }
 }
 
+
 @media (max-width: 650px) {
+
     .navbar {
         padding: 14px 20px;
     }
@@ -696,7 +695,7 @@ section {
 
     .btn {
         padding: 11px 15px;
-    };
+    }
 
     .terminal-body {
         padding: 18px;
@@ -712,12 +711,53 @@ section {
     }
 }
 
+
 @media (max-width: 380px) {
+
     .about-info {
         grid-template-columns: 1fr;
     }
 
     .hero h1 {
         font-size: 36px;
+    }
+}
+
+
+/* =====================================
+   13. SCROLL REVEAL ANIMATION
+===================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================================
+   14. ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
     }
 }
